@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script>
+
+  $(window).on("load",function() {
+    //  $(window).scroll(function() {
+        $(".fade").each(function() {
+            /* Check the location of each desired element */
+            // var objectBottom = $(this).offset().top + $(this).outerHeight();
+            // var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+            //
+            // windowBottom = windowBottom + 100;
+            //
+            // /* If the element is completely within bounds of the window, fade it in */
+            // if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+            //   if ($(this).css("opacity")==0) {$(this).fadeTo(350,1);}
+            // } else { //object goes out of view (scrolling up)
+            //   if ($(this).css("opacity")==1) {$(this).fadeTo(350,0);}
+            //   }
+            $(this).fadeTo(1000,1)
+            //    if ($(this).css("opacity")==0) {$(this).fadeTo(350,1)
+        //});
+      });
+      //$(window).scroll(); //invoke scroll-handler on page-load
+  });
+</script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">iOS work</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#">About & Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">=</a>
+                      <section class="fade">
+                        <h1>hi, my name is sara.
+                          <p>currently, I'm an iOS developer at <a href="https://www.thelevelup.com">LevelUp</a></p>
+                        </h1>
+                        <h4>august 2016 - present // boston, ma </h4>
+                      </section>
+                        <section class="fade">
+                        <h1>before that, I worked at <a href="https://intrepid.io">Intrepid Pursuits</a>
+                          <p>as an iOS developer.</p>
+                        </h1>
+                        <h4>june 2015 - july 2016 // cambridge, ma</h4>
+                        </section>
+                        <section class="fade">
+                        <h1>and before that, I studied computer science and
+                          <p>communication & culture at
+                          <a href="https://www.clarku.edu">Clark University</a></p>
+                        </h1>
+                        <h4>august 2011 - may 2015 // worcester, ma</h4>
+                      </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
